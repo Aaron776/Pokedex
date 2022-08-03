@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        <link rel="shortcut icon" href="images/Pokeball.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/mediaQuery950px.css" media="(max-width:950px)">
+        <link rel="stylesheet" href="styles/mediaQuery780px.css" media="(max-width:780px)">
+        <link rel="stylesheet" href="styles/mediaQuery480px.css" media="(max-width:480px)">
+        <link rel="stylesheet" href="styles/mediaQuery320px.css" media="(max-width:320px)">
+        <link rel="stylesheet" href="styles/scrollbar.css">
+    </head>
+    <body>
+        <h1 class="title">Pokedex</h1>
+       <main class="main">
+        <section class="inputFields">
+            <input type="text" id="pokemonName" placeholder="Nombre del Pokemon o ID">
+            <div class="buttons">
+                <img src="img/search.svg" id="buscarPokemon">
+                <img src="img/cancel.svg" id="borrarPokemon" >
+            </div>
+        </section>
+        <section id="app" class="pokemonData"></section> <!--este seccion contendra toda la informacion quela api traera del pokemon-->
+       </main>
+       <script src="app.js"></script>
+    </body>
+</html>
